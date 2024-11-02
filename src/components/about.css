@@ -1,0 +1,86 @@
+/* Hero Section */
+.s_title {
+  position: relative;
+  text-align: center;
+  color: white;
+  /* background-image: url('/web/image/website.s_parallax_default_image'); */
+  background-size: cover;
+  background-position: 50% 0;
+  padding: 80px 0;
+}
+
+.o_we_bg_filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.s_title h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* About Us Text/Image Section */
+.s_text_image {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.s_text_image h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.s_text_image p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.s_text_image .btn {
+  background-color: #f4a460;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.s_text_image .btn:hover {
+  background-color: #d96c42;
+}
+
+/* Image Styling */
+.s_text_image img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Parallax Section */
+.parallax {
+  position: relative;
+  /* background-image: url('/web/image/website.s_parallax_default_image'); */
+  background-attachment: fixed;
+  background-position: 50% 75%;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.parallax h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.parallax .o_we_bg_filter {
+  background-color: rgba(0, 0, 0, 0.6);
+}

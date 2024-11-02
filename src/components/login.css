@@ -1,0 +1,85 @@
+/* login.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; /* Light background color */
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height */
+}
+
+.login-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 300px; /* Fixed width */
+  text-align: center; /* Centered text */
+}
+
+.login-form h3 {
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.input-group {
+  margin-bottom: 15px; /* Space between input fields */
+  text-align: left; /* Align labels and inputs to the left */
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px; /* Space below labels */
+  font-weight: bold;
+}
+
+.input-group input {
+  width: calc(100% - 20px); /* Full width minus padding */
+  padding: 8px 10px; /* Padding for input fields */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.login-button {
+  background-color: #9aac9e; /* Button background */
+  color: white; /* White text */
+  padding: 10px 15px; /* Button padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  width: 100%; /* Full width */
+  margin-bottom: 15px; /* Space below button */
+}
+
+.login-button:hover {
+  background-color: #f3be5d; /* Change background on hover */
+}
+
+.error-message {
+  color: red; /* Red color for error messages */
+  text-align: center; /* Center the message */
+}
+
+.success-message {
+  color: green; /* Green color for success messages */
+  text-align: center; /* Center the message */
+}
+
+.extra-links {
+  margin-top: 20px; /* Space above extra links */
+  text-align: center; /* Center the links */
+}
+
+.extra-links a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.extra-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
