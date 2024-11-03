@@ -7,7 +7,7 @@ function Hero() {
       {/* Background Video */}
       <video
         className="hero-video"
-        src="https://res.cloudinary.com/dhxtzhs6h/video/upload/v1730586263/lithg0uv3vdiszlaf4wj.mp4"
+        src="https://res.cloudinary.com/dhxtzhs6h/video/upload/v1730633102/fp303styn4d0wetltyal.mp4"
         autoPlay
         loop
         muted>
@@ -18,7 +18,7 @@ function Hero() {
         <div className="hero-content">
           <h1>Welcome to NetLink</h1>
           <p>Connecting You at the Speed of Now</p>
-          <button className="hero-button">Grab Enticing Offers!</button>
+          <button className="hero-button">Click Here for Enticing Offers!</button>
         </div>
       </div>
     </div>
