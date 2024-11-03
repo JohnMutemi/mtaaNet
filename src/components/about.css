@@ -1,86 +1,124 @@
-/* Hero Section */
-.s_title {
-  position: relative;
+/* General Page Layout */
+.about-hero-section {
+  background-color: #2a3d34; /* Dark green */
+  color: #f5f5f5; /* Light text color */
+  padding: 50px 20px;
   text-align: center;
-  color: white;
-  /* background-image: url('/web/image/website.s_parallax_default_image'); */
-  background-size: cover;
-  background-position: 50% 0;
-  padding: 80px 0;
+  position: relative;
 }
 
-.o_we_bg_filter {
+.background-filter {
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
   z-index: 1;
 }
 
-.s_title h1 {
+.hero-container {
   position: relative;
   z-index: 2;
-  font-size: 2.5rem;
-  font-weight: bold;
 }
 
-/* About Us Text/Image Section */
-.s_text_image {
-  padding: 80px 0;
-  background-color: #f9f9f9;
+.about-text-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: #f0f0f0; /* Light grey */
+  padding: 40px;
+  border-radius: 10px;
 }
 
-.s_text_image h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-  color: #333;
+.text-image-container .text-section {
+  padding: 20px;
+  background-color: #4a6854; /* Medium green */
+  color: #fff;
+  border-radius: 10px;
 }
 
-.s_text_image p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #666;
-}
-
-.s_text_image .btn {
-  background-color: #f4a460;
-  color: white;
-  border-radius: 20px;
-  font-weight: bold;
-}
-
-.s_text_image .btn:hover {
-  background-color: #d96c42;
-}
-
-/* Image Styling */
-.s_text_image img {
+.text-image-container .image-section img {
   width: 100%;
   border-radius: 10px;
-  margin-top: 20px;
+  border: 5px solid #d3d3d3; /* Light grey border */
 }
 
-/* Parallax Section */
-.parallax {
-  position: relative;
-  /* background-image: url('/web/image/website.s_parallax_default_image'); */
-  background-attachment: fixed;
-  background-position: 50% 75%;
-  background-size: cover;
-  color: white;
+.explore-connections {
+  background-color: #e6e6e6; /* Light grey */
+  padding: 40px;
   text-align: center;
-  padding: 80px 0;
+  border-radius: 10px;
 }
 
-.parallax h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+.connectivity-parallax {
+  background: linear-gradient(to right, #2a3d34, #4a6854);
+  color: #f5f5f5;
+  padding: 50px;
+  text-align: center;
 }
 
-.parallax .o_we_bg_filter {
-  background-color: rgba(0, 0, 0, 0.6);
+.parallax-content {
+  margin: auto;
+  max-width: 600px;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  background-color: #4a6854;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.team-container h2 {
+  color: #f5f5f5;
+}
+
+.team-member {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.team-member .member-photo {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 3px solid #d3d3d3; /* Light grey */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-text-image, .team-members {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+
+  .about-hero-section {
+    padding: 30px 10px;
+  }
+
+  .explore-connections, .connectivity-parallax, .team-members {
+    padding: 20px;
+  }
+
+  .text-image-container .text-section, .team-member {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-section h1, .text-image-container .text-section h2, .explore-connections h2, .parallax-content h2, .team-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .team-member h3 {
+    font-size: 1rem;
+  }
+
+  .about-hero-section {
+    padding: 20px 5px;
+  }
 }

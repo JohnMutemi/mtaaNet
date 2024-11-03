@@ -14,6 +14,7 @@ import AboutUs from './components/AboutUs';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 
+
 function AppContent() {
   const location = useLocation();
 
@@ -24,7 +25,7 @@ function AppContent() {
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
